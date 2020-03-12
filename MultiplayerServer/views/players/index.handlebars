@@ -1,0 +1,15 @@
+{{#each players}}
+<div class="card card-body">
+    <h4>{{name}}</h4>
+    <p>{{online}}</p>
+    <p>{{kills}}</p>
+    {{!--<p>{{description}}</p>--}
+    {{!-- <a href="/game/gameentry/edit/{{id}}" class="btn btn-block btn-dark mb-2">Edit Game Info</a>
+    <form action="/game/gamedelete/{{id}}?_method=DELETE" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" class="btn btn-block btn-danger" value="delete">
+    </form> --}}
+</div>
+{{else}}
+<p>No Entries Found!</p>
+{{/each}}
